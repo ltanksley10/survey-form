@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    background: url("https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    line-height: 1.4;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+}
+
+p {
+    font-size: 20px;
+}
+
+input, button, select, textarea {
+    font-size: 16px;
+    text-indent: 5px;
+}
+
+.container {
+    color: white;
+    width: 100%;
+    margin: 15px auto 0 auto;
+    max-width: 720px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-control {
+    padding: 0.375rem 0.75rem;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+.form-group {
+  margin: 0 auto 1rem auto;
+  padding: 0.25rem;
+}
+
+.input-radio, .input-checkbox {
+    display: inline-block;
+    min-height: 10px;
+    min-width: 10px;
+}
+
+.input-textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px;
+    font-size: 18px;
+    resize: vertical;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #10a38b;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+}
+
+#description {
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+#survey-form {
+    background: rgba(0, 7, 110, .8);
+    color: white;
+    padding: 40px;
+    display: block;
+    border-radius: 15px;
+}
+
+
+
+

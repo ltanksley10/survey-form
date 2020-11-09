@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	<title>freeCodeCamp Project Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+	    <header class="header text-center">
+	        <h1 id="title">SomeCompany's Survey Form</h1>
+		    <p id="description"><em>Thank you for taking the time to complete our survey.</em></p>
+	    </header>
+		<form id="survey-form">
+			<div class="form-group">
+				<label id="name-label" for="name">Name</label>
+				<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+			</div>
+			<div class="form-group">
+				<label id="email-label" for="email">Email</label>
+				<input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+			</div>
+			<div class="form-group">
+				<label id="number-label" for="number">Age (optional)</label>
+				<input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+			</div>
+			<div class="form-group">
+			    <p>Which option best describes you currently?</p>
+			    <select id="dropdown" name="role" class="form-control" required>
+			        <option disabled selected value>Select Current Role</option>
+			        <option value="student">Student</option>
+			        <option value="job">Full Time Job</option>
+			        <option value="learner">Full Time Learner</option>
+			        <option value="preferNo">Prefer not to say</option>
+			        <option value="other">Other</option>
+			    </select>
+			</div>
+			<div class="form-group">
+			    <p>Would you recommend SomeCompany to a friend?</p>
+			    <label>
+			        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>
+			        Definitely
+			    </label>
+			    <label>
+			        <input name="user-recommend" value="maybe" type="radio" class="input-radio">
+			        Maybe
+			    </label>
+			    <label>
+			        <input name="user-recommend" value="not-sure" type="radio" class="input-radio">
+			        Not sure
+			    </label>
+			</div>
+			<div class="form-group">
+			    <p>What do you appreciate most about SomeCompany?</p>
+			    <select id="most-like" name="most-like" class="form-control" required>
+			        <option disabled selected value>Select an option</option>
+			        <option value="products">Products</option>
+			        <option value="service">Customer Service</option>
+			        <option value="mission">Mission</option>
+			        <option value="leadership">Leadership</option>
+			    </select>
+			</div>
+			<div class="form-group">
+			    <p>What would you like us to improve? (Check all that apply)</p>
+			    <label>
+			        <input name="prefer" value="product-options" type="checkbox" class="input-checkbox">
+			        Product Options
+			    </label>
+			    <label>
+			        <input name="prefer" value="product-availability" type="checkbox" class="input-checkbox">
+			        Product Availability
+			    </label>
+			    <label>
+			        <input name="prefer" value="customer-service" type="checkbox" class="input-checkbox">
+			        Customer Service
+			    </label>
+			    <label>
+			        <input name="prefer" value="prices" type="checkbox" class="input-checkbox">
+			        Prices
+			    </label>
+			    <label>
+			        <input name="prefer" value="website-usability" type="checkbox" class="input-checkbox">
+			        Website Usability
+			    </label>
+			</div>
+			<div class="form-group">
+			    <p>Any other suggestions?</p>
+			    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here.."></textarea>
+			</div>
+			<div class="form-group">
+			    <button type="submit" id="submit" class="submit-button">Submit</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
